@@ -6,7 +6,7 @@
 
 ## Phases
 
-- [ ] **Phase 1: Data Shape & Row Integrity** - Define and normalize table row data so personal and API records share one consistent structure.
+- [x] **Phase 1: Data Shape & Row Integrity** - Define and normalize table row data so personal and API records share one consistent structure.
 - [ ] **Phase 2: API Fetch Lifecycle** - Integrate JSONPlaceholder fetching with reliable loading, error, and refresh behavior.
 - [ ] **Phase 3: Unified Table Experience** - Deliver the final user-facing table with required columns and search/filter behavior.
 - [ ] **Phase 4: Submission Delivery** - Publish the project and complete assignment submission workflow.
@@ -25,10 +25,11 @@
 3. User can identify whether a row came from Personal data or API data.
 4. User sees a clear indicator when required row data is missing.
    **Plans**: 2 plans
-Plans:
-- [ ] 01-01-PLAN.md - Define row contracts and normalization utilities with tests.
-- [ ] 01-02-PLAN.md - Build personal-first table wiring with source and missing-data indicators.
-   **UI hint**: yes
+   Plans:
+
+- [x] 01-01-PLAN.md - Define row contracts and normalization utilities with tests.
+- [x] 01-02-PLAN.md - Build personal-first table wiring with source and missing-data indicators.
+      **UI hint**: yes
 
 ### Phase 2: API Fetch Lifecycle
 
@@ -72,7 +73,7 @@ Plans:
 
 | Phase                         | Plans Complete | Status      | Completed |
 | ----------------------------- | -------------- | ----------- | --------- |
-| 1. Data Shape & Row Integrity | 0/2            | Not started | -         |
+| 1. Data Shape & Row Integrity | 2/2            | Completed   | 2026-04-08 |
 | 2. API Fetch Lifecycle        | 0/0            | Not started | -         |
 | 3. Unified Table Experience   | 0/0            | Not started | -         |
 | 4. Submission Delivery        | 0/0            | Not started | -         |
