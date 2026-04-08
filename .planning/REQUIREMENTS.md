@@ -28,6 +28,15 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **DLV-01**: Student can publish project to GitHub and retrieve repository link
 - [ ] **DLV-02**: Student can submit repository link in required Word document workflow
 
+### UI Theme Refresh
+
+- [x] **UI-01**: User sees a softened, light-first visual tone across page shell, controls, and table surfaces
+- [x] **UI-02**: User sees consistent semantic color tokens used across global, app, and table styles
+- [ ] **UI-03**: User can read body text and state indicators with accessible contrast in default and dark-preference modes
+- [ ] **UI-04**: User can still perceive distinct hover/focus/interaction states after visual softening
+- [x] **UI-05**: Theme remains coherent in default and dark-preference rendering
+- [ ] **UI-06**: Functional table behavior remains unchanged after all Phase 5 styling updates
+
 ## v2 Requirements
 
 Deferred to future release. Tracked but not in current roadmap.
@@ -42,37 +51,45 @@ Deferred to future release. Tracked but not in current roadmap.
 
 Explicitly excluded. Documented to prevent scope creep.
 
-| Feature | Reason |
-|---------|--------|
-| Authentication and user accounts | Not part of assignment objective |
-| Backend persistence/database | Assignment focuses on frontend API consumption |
-| CRUD editing of API users | Endpoint is used as read-only fake data source for this activity |
-| Enterprise data-grid framework | Adds complexity beyond classroom scope |
+| Feature                          | Reason                                                           |
+| -------------------------------- | ---------------------------------------------------------------- |
+| Authentication and user accounts | Not part of assignment objective                                 |
+| Backend persistence/database     | Assignment focuses on frontend API consumption                   |
+| CRUD editing of API users        | Endpoint is used as read-only fake data source for this activity |
+| Enterprise data-grid framework   | Adds complexity beyond classroom scope                           |
 
 ## Traceability
 
 Which phases cover which requirements. Updated during roadmap creation.
 
-| Requirement | Phase | Status |
-|-------------|-------|--------|
-| DATA-01 | Phase 2 | Pending |
-| DATA-02 | Phase 3 | Pending |
-| DATA-03 | Phase 1 | Pending |
-| DATA-04 | Phase 1 | Pending |
-| DATA-05 | Phase 2 | Pending |
-| DATA-06 | Phase 2 | Pending |
-| UX-01 | Phase 1 | Pending |
-| UX-02 | Phase 2 | Pending |
-| UX-03 | Phase 3 | Pending |
-| UX-04 | Phase 1 | Pending |
-| DLV-01 | Phase 4 | Pending |
-| DLV-02 | Phase 4 | Pending |
+| Requirement | Phase   | Status  |
+| ----------- | ------- | ------- |
+| DATA-01     | Phase 2 | Pending |
+| DATA-02     | Phase 3 | Pending |
+| DATA-03     | Phase 1 | Pending |
+| DATA-04     | Phase 1 | Pending |
+| DATA-05     | Phase 2 | Pending |
+| DATA-06     | Phase 2 | Pending |
+| UX-01       | Phase 1 | Pending |
+| UX-02       | Phase 2 | Pending |
+| UX-03       | Phase 3 | Pending |
+| UX-04       | Phase 1 | Pending |
+| DLV-01      | Phase 4 | Pending |
+| DLV-02      | Phase 4 | Pending |
+| UI-01       | Phase 5 | Completed |
+| UI-02       | Phase 5 | Completed |
+| UI-03       | Phase 5 | Pending |
+| UI-04       | Phase 5 | Pending |
+| UI-05       | Phase 5 | Completed |
+| UI-06       | Phase 5 | Pending |
 
 **Coverage:**
+
 - v1 requirements: 12 total
 - Mapped to phases: 12
 - Unmapped: 0 ✓
 
 ---
-*Requirements defined: 2026-04-08*
-*Last updated: 2026-04-08 after roadmap traceability mapping*
+
+_Requirements defined: 2026-04-08_
+_Last updated: 2026-04-08 after roadmap traceability mapping_

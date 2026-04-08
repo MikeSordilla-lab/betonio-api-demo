@@ -47,7 +47,7 @@
 
 - [x] 02-01-PLAN.md - Build tested API client for JSONPlaceholder users endpoint.
 - [x] 02-02-PLAN.md - Wire loading, error, and refresh lifecycle into app UI.
-   **UI hint**: yes
+      **UI hint**: yes
 
 ### Phase 3: Unified Table Experience
 
@@ -64,7 +64,7 @@
 
 - [x] 03-01-PLAN.md - Add tested row filtering utility for username/email queries.
 - [x] 03-02-PLAN.md - Wire search UI and no-result table feedback.
-   **UI hint**: yes
+      **UI hint**: yes
 
 ### Phase 4: Submission Delivery
 
@@ -85,6 +85,7 @@
 | 2. API Fetch Lifecycle        | 2/2            | Completed   | 2026-04-08 |
 | 3. Unified Table Experience   | 2/2            | Completed   | 2026-04-08 |
 | 4. Submission Delivery        | 0/0            | Not started | -          |
+| 5. UI Theme Softening         | 1/2            | In progress | 2026-04-08 |
 
 ### Phase 5: can you fix the ui it has a harsh and very dark theme can you fix the ui
 
@@ -98,8 +99,9 @@
 3. User can read body text and state indicators with accessible contrast in default and dark-preference modes.
 4. User can still perceive distinct hover/focus/interaction states after visual softening.
 5. User can still load, refresh, search/filter, and view empty/error states with no functional behavior changes.
-**Plans:** 2 plans
+   **Plans:** 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md - Build softened global/App token system and align app controls to semantic tokens.
+
+- [x] 05-01-PLAN.md - Build softened global/App token system and align app controls to semantic tokens.
 - [ ] 05-02-PLAN.md - Apply softened token styling to table UI and run non-regression verification.
