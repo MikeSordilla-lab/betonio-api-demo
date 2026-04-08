@@ -42,6 +42,13 @@ export function UsersTable({ rows }) {
           </tr>
         </thead>
         <tbody>
+          {rows.length === 0 ? (
+            <tr>
+              <td colSpan={ROW_COLUMNS.length} className="empty-table-message">
+                No rows match current search.
+              </td>
+            </tr>
+          ) : null}
           {rows.map((row) => (
             <tr key={`${row.source}-${row.id}-${row.username}`}>
               <td>

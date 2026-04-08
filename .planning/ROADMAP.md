@@ -8,7 +8,7 @@
 
 - [x] **Phase 1: Data Shape & Row Integrity** - Define and normalize table row data so personal and API records share one consistent structure.
 - [x] **Phase 2: API Fetch Lifecycle** - Integrate JSONPlaceholder fetching with reliable loading, error, and refresh behavior.
-- [ ] **Phase 3: Unified Table Experience** - Deliver the final user-facing table with required columns and search/filter behavior.
+- [x] **Phase 3: Unified Table Experience** - Deliver the final user-facing table with required columns and search/filter behavior.
 - [ ] **Phase 4: Submission Delivery** - Publish the project and complete assignment submission workflow.
 
 ## Phase Details
@@ -59,7 +59,11 @@
 1. User can view a single table with columns: ID, First Name, Last Name, Username, Email, Zipcode.
 2. User sees personal row rendered first, followed by API rows.
 3. User can search/filter rows by username or email and see matching results update.
-   **Plans**: TBD
+   **Plans**: 2 plans
+   Plans:
+
+- [x] 03-01-PLAN.md - Add tested row filtering utility for username/email queries.
+- [x] 03-02-PLAN.md - Wire search UI and no-result table feedback.
    **UI hint**: yes
 
 ### Phase 4: Submission Delivery
@@ -79,5 +83,5 @@
 | ----------------------------- | -------------- | ----------- | ---------- |
 | 1. Data Shape & Row Integrity | 2/2            | Completed   | 2026-04-08 |
 | 2. API Fetch Lifecycle        | 2/2            | Completed   | 2026-04-08 |
-| 3. Unified Table Experience   | 0/0            | Not started | -          |
+| 3. Unified Table Experience   | 2/2            | Completed   | 2026-04-08 |
 | 4. Submission Delivery        | 0/0            | Not started | -          |

@@ -20,6 +20,34 @@
   color: #334155;
 }
 
+.search-row {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.45rem;
+  text-align: left;
+}
+
+.search-label {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #1e3a5f;
+}
+
+.search-input {
+  width: min(520px, 100%);
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.94rem;
+  color: #0f172a;
+  background: #fff;
+}
+
+.result-count {
+  font-size: 0.78rem;
+  color: #475569;
+}
+
 .controls-row {
   margin-top: 1rem;
   display: flex;

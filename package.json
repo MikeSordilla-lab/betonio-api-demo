@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test:rows": "node --test src/features/users-table/model/*.test.js",
-    "test:phase2-api": "node --test src/features/users-table/api/*.test.js"
+    "test:phase2-api": "node --test src/features/users-table/api/*.test.js",
+    "test:phase3-filter": "node --test src/features/users-table/model/filterRows.test.js"
   },
   "dependencies": {
     "react": "^19.2.4",
