@@ -1,20 +1,20 @@
 # State
 
-**Last Updated:** 2026-04-08
+**Last Updated:** 2026-04-09
 
 ## Project Reference
 
 - **Project:** Exploring APIs Using Fake Data
 - **Core Value:** Student can clearly demonstrate API fetch + data merge skill by showing personal row first and API rows after in one table.
-- **Current Focus:** Phase 4 - Submission Delivery
+- **Current Focus:** Phase 5 - UI Theme Softening
 
 ## Current Position
 
-- **Current Phase:** 4
+- **Current Phase:** 5
 - **Current Plan:** None active
-- **Status:** Phase 3 complete; ready to plan/execute Phase 4
-- **Progress:** 3/4 phases complete
-- **Progress Bar:** [###-] 75%
+- **Status:** Phase 5 planned; ready to execute plans 05-01 and 05-02
+- **Progress:** 3/5 phases complete
+- **Progress Bar:** [###--] 60%
 
 ## Performance Metrics
 
@@ -31,10 +31,14 @@
 - Phase 2 introduced API boundary module with explicit failure handling and tests.
 - Phase 3 added search/filter experience over unified table with no-result UX.
 
+### Roadmap Evolution
+
+- Phase 5 added: can you fix the ui it has a harsh and very dark theme can you fix the ui
+
 ### TODOs
 
-- Create detailed plan for Phase 4 delivery workflow.
-- Complete publish/link submission requirements for final handoff.
+- Execute Phase 5 plan 05-01 (global/app token softening).
+- Execute Phase 5 plan 05-02 (users table softening + regression verification).
 
 ### Blockers
 
@@ -43,4 +47,4 @@
 ## Session Continuity
 
 - Phase 3 artifacts completed and verified with tests/lint/build.
-- Next command: /gsd-plan-phase 4
+- Next command: /gsd-execute-phase 5

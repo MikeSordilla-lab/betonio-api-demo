@@ -85,3 +85,21 @@
 | 2. API Fetch Lifecycle        | 2/2            | Completed   | 2026-04-08 |
 | 3. Unified Table Experience   | 2/2            | Completed   | 2026-04-08 |
 | 4. Submission Delivery        | 0/0            | Not started | -          |
+
+### Phase 5: can you fix the ui it has a harsh and very dark theme can you fix the ui
+
+**Goal:** Users experience a visibly lighter, calmer, and readable UI across app shell, controls, and table while preserving all existing table behaviors.
+**Requirements**: UI-01, UI-02, UI-03, UI-04, UI-05, UI-06
+**Depends on:** Phase 4
+**Success Criteria** (what must be TRUE):
+
+1. User sees a softened, light-first visual tone across page shell, controls, and table surfaces.
+2. User sees consistent semantic color tokens used across global, app, and table styles.
+3. User can read body text and state indicators with accessible contrast in default and dark-preference modes.
+4. User can still perceive distinct hover/focus/interaction states after visual softening.
+5. User can still load, refresh, search/filter, and view empty/error states with no functional behavior changes.
+**Plans:** 2 plans
+
+Plans:
+- [ ] 05-01-PLAN.md - Build softened global/App token system and align app controls to semantic tokens.
+- [ ] 05-02-PLAN.md - Apply softened token styling to table UI and run non-regression verification.
