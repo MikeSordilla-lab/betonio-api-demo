@@ -19,3 +19,45 @@
   margin-top: 0.6rem;
   color: #334155;
 }
+
+.controls-row {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.refresh-button {
+  border: 1px solid #17406f;
+  background: #17406f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.55rem 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background: #0f2f54;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.status-loading {
+  background: #fff7ed;
+  color: #9a3412;
+}
+
+.status-error {
+  margin-top: 0.75rem;
+  background: #fff1f2;
+  color: #9f1239;
+}

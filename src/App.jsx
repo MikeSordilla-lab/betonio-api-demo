@@ -1,50 +1,30 @@
 import { UsersTable } from './features/users-table/components/UsersTable.jsx'
-import { mergeRows } from './features/users-table/model/mergeRows.js'
-import {
-  createPersonalRow,
-  normalizeApiUser,
-} from './features/users-table/model/rowModel.js'
+import { useUsersTableData } from './features/users-table/hooks/useUsersTableData.js'
 import './App.css'
 
 function App() {
-  const personalRow = createPersonalRow({
-    id: 'ME',
-    firstName: 'Mike',
-    lastName: 'Student',
-    username: 'mike-learning-api',
-    email: 'mike.student@example.com',
-    zipcode: '',
-  })
-
-  const apiFixtureRows = [
-    {
-      id: 1,
-      name: 'Leanne Graham',
-      username: 'Bret',
-      email: 'Sincere@april.biz',
-      address: { zipcode: '92998-3874' },
-    },
-    {
-      id: 2,
-      name: 'Plato',
-      username: 'Antonette',
-      email: '',
-      address: {},
-    },
-  ].map(normalizeApiUser)
-
-  const tableRows = mergeRows(personalRow, apiFixtureRows)
+  const { rows, isLoading, errorMessage, refreshData } = useUsersTableData()
 
   return (
     <main className="page-shell">
       <header className="page-header">
         <h1>Exploring APIs Using Fake Data</h1>
         <p>
-          Phase 1 baseline: personal row first, API names split, row source visible,
-          and missing key fields labeled.
+          Phase 2 lifecycle: live API fetch, loading/error feedback, manual refresh.
         </p>
+        <div className="controls-row">
+          <button type="button" className="refresh-button" onClick={refreshData}>
+            Refresh API Data
+          </button>
+          {isLoading ? <span className="status-pill status-loading">Loading users...</span> : null}
+        </div>
+        {errorMessage ? (
+          <p role="alert" className="status-pill status-error">
+            {errorMessage}
+          </p>
+        ) : null}
       </header>
-      <UsersTable rows={tableRows} />
+      <UsersTable rows={rows} />
     </main>
   )
 }

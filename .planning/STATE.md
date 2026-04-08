@@ -6,15 +6,15 @@
 
 - **Project:** Exploring APIs Using Fake Data
 - **Core Value:** Student can clearly demonstrate API fetch + data merge skill by showing personal row first and API rows after in one table.
-- **Current Focus:** Phase 2 - API Fetch Lifecycle
+- **Current Focus:** Phase 3 - Unified Table Experience
 
 ## Current Position
 
-- **Current Phase:** 2
+- **Current Phase:** 3
 - **Current Plan:** None active
-- **Status:** Phase 1 complete; ready to plan/execute Phase 2
-- **Progress:** 1/4 phases complete
-- **Progress Bar:** [#---] 25%
+- **Status:** Phase 2 complete; ready to plan/execute Phase 3
+- **Progress:** 2/4 phases complete
+- **Progress Bar:** [##--] 50%
 
 ## Performance Metrics
 
@@ -28,13 +28,13 @@
 ### Decisions
 
 - Phase 1 implemented through row-contract-first architecture (normalize before render).
-- Personal row precedence enforced by dedicated merge helper plus tests.
-- Missing-field signaling standardized through `missingFields` metadata across row model.
+- Phase 2 introduced API boundary module with explicit failure handling and tests.
+- Phase 2 wired hook-based loading, error, and manual refresh lifecycle into app shell.
 
 ### TODOs
 
-- Create detailed plan for Phase 2 (fetch lifecycle, loading, error, refresh).
-- Implement and verify Phase 2 success criteria before moving to Phase 3.
+- Create detailed plan for Phase 3 (final unified table experience + filtering).
+- Implement and verify Phase 3 success criteria before moving to Phase 4.
 
 ### Blockers
 
@@ -42,5 +42,5 @@
 
 ## Session Continuity
 
-- Phase 1 artifacts completed and verified with tests/lint/build.
-- Next command: `/gsd-plan-phase 2` (or `/gsd-execute-phase 2` if plans already exist).
+- Phase 2 artifacts completed and verified with tests/lint/build.
+- Next command: /gsd-plan-phase 3

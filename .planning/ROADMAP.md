@@ -7,7 +7,7 @@
 ## Phases
 
 - [x] **Phase 1: Data Shape & Row Integrity** - Define and normalize table row data so personal and API records share one consistent structure.
-- [ ] **Phase 2: API Fetch Lifecycle** - Integrate JSONPlaceholder fetching with reliable loading, error, and refresh behavior.
+- [x] **Phase 2: API Fetch Lifecycle** - Integrate JSONPlaceholder fetching with reliable loading, error, and refresh behavior.
 - [ ] **Phase 3: Unified Table Experience** - Deliver the final user-facing table with required columns and search/filter behavior.
 - [ ] **Phase 4: Submission Delivery** - Publish the project and complete assignment submission workflow.
 
@@ -42,7 +42,11 @@
 2. User sees a loading state while a request is in progress.
 3. User sees an error state when the API request fails.
 4. User can manually refresh data and observe the app re-requesting users.
-   **Plans**: TBD
+   **Plans**: 2 plans
+   Plans:
+
+- [x] 02-01-PLAN.md - Build tested API client for JSONPlaceholder users endpoint.
+- [x] 02-02-PLAN.md - Wire loading, error, and refresh lifecycle into app UI.
    **UI hint**: yes
 
 ### Phase 3: Unified Table Experience
@@ -71,9 +75,9 @@
 
 ## Progress
 
-| Phase                         | Plans Complete | Status      | Completed |
-| ----------------------------- | -------------- | ----------- | --------- |
+| Phase                         | Plans Complete | Status      | Completed  |
+| ----------------------------- | -------------- | ----------- | ---------- |
 | 1. Data Shape & Row Integrity | 2/2            | Completed   | 2026-04-08 |
-| 2. API Fetch Lifecycle        | 0/0            | Not started | -         |
-| 3. Unified Table Experience   | 0/0            | Not started | -         |
-| 4. Submission Delivery        | 0/0            | Not started | -         |
+| 2. API Fetch Lifecycle        | 2/2            | Completed   | 2026-04-08 |
+| 3. Unified Table Experience   | 0/0            | Not started | -          |
+| 4. Submission Delivery        | 0/0            | Not started | -          |
