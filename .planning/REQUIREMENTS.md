@@ -55,24 +55,24 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DATA-01 | Phase TBD | Pending |
-| DATA-02 | Phase TBD | Pending |
-| DATA-03 | Phase TBD | Pending |
-| DATA-04 | Phase TBD | Pending |
-| DATA-05 | Phase TBD | Pending |
-| DATA-06 | Phase TBD | Pending |
-| UX-01 | Phase TBD | Pending |
-| UX-02 | Phase TBD | Pending |
-| UX-03 | Phase TBD | Pending |
-| UX-04 | Phase TBD | Pending |
-| DLV-01 | Phase TBD | Pending |
-| DLV-02 | Phase TBD | Pending |
+| DATA-01 | Phase 2 | Pending |
+| DATA-02 | Phase 3 | Pending |
+| DATA-03 | Phase 1 | Pending |
+| DATA-04 | Phase 1 | Pending |
+| DATA-05 | Phase 2 | Pending |
+| DATA-06 | Phase 2 | Pending |
+| UX-01 | Phase 1 | Pending |
+| UX-02 | Phase 2 | Pending |
+| UX-03 | Phase 3 | Pending |
+| UX-04 | Phase 1 | Pending |
+| DLV-01 | Phase 4 | Pending |
+| DLV-02 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 12 total
-- Mapped to phases: 0
-- Unmapped: 12 ⚠️
+- Mapped to phases: 12
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-04-08*
-*Last updated: 2026-04-08 after initial definition*
+*Last updated: 2026-04-08 after roadmap traceability mapping*
