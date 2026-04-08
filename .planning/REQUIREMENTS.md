@@ -32,10 +32,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **UI-01**: User sees a softened, light-first visual tone across page shell, controls, and table surfaces
 - [x] **UI-02**: User sees consistent semantic color tokens used across global, app, and table styles
-- [ ] **UI-03**: User can read body text and state indicators with accessible contrast in default and dark-preference modes
-- [ ] **UI-04**: User can still perceive distinct hover/focus/interaction states after visual softening
+- [x] **UI-03**: User can read body text and state indicators with accessible contrast in default and dark-preference modes
+- [x] **UI-04**: User can still perceive distinct hover/focus/interaction states after visual softening
 - [x] **UI-05**: Theme remains coherent in default and dark-preference rendering
-- [ ] **UI-06**: Functional table behavior remains unchanged after all Phase 5 styling updates
+- [x] **UI-06**: Functional table behavior remains unchanged after all Phase 5 styling updates
 
 ## v2 Requirements
 
@@ -78,10 +78,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DLV-02      | Phase 4 | Pending |
 | UI-01       | Phase 5 | Completed |
 | UI-02       | Phase 5 | Completed |
-| UI-03       | Phase 5 | Pending |
-| UI-04       | Phase 5 | Pending |
+| UI-03       | Phase 5 | Complete |
+| UI-04       | Phase 5 | Complete |
 | UI-05       | Phase 5 | Completed |
-| UI-06       | Phase 5 | Pending |
+| UI-06       | Phase 5 | Complete |
 
 **Coverage:**
 

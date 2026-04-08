@@ -104,4 +104,4 @@
 Plans:
 
 - [x] 05-01-PLAN.md - Build softened global/App token system and align app controls to semantic tokens.
-- [ ] 05-02-PLAN.md - Apply softened token styling to table UI and run non-regression verification.
+- [x] 05-02-PLAN.md - Apply softened token styling to table UI and run non-regression verification.
