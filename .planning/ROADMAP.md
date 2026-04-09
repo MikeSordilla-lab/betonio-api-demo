@@ -75,7 +75,12 @@
 
 1. Student can access a public GitHub repository containing the completed project.
 2. Student can retrieve the repository URL and place it into the required Word document submission flow.
-   **Plans**: TBD
+   **Plans**: 2 plans
+
+Plans:
+
+- [x] 04-01-PLAN.md - Publish canonical public GitHub repository with quality-gate evidence.
+- [x] 04-02-PLAN.md - Complete Word-document submission handoff using canonical repository URL.
 
 ## Progress
 
@@ -84,8 +89,8 @@
 | 1. Data Shape & Row Integrity | 2/2            | Completed   | 2026-04-08 |
 | 2. API Fetch Lifecycle        | 2/2            | Completed   | 2026-04-08 |
 | 3. Unified Table Experience   | 2/2            | Completed   | 2026-04-08 |
-| 4. Submission Delivery        | 0/0            | Not started | -          |
-| 5. UI Theme Softening         | 1/2            | In progress | 2026-04-08 |
+| 4. Submission Delivery        | 2/2            | Completed   | 2026-04-09 |
+| 5. UI Theme Softening         | 2/2            | Completed   | 2026-04-09 |
 
 ### Phase 5: can you fix the ui it has a harsh and very dark theme can you fix the ui
 
