@@ -5,10 +5,10 @@ import { createPersonalRow, normalizeApiUser } from '../model/rowModel.js'
 
 const personalRow = createPersonalRow({
   id: 'ME',
-  firstName: 'Mike',
-  lastName: 'Student',
-  username: 'mike-learning-api',
-  email: 'mike.student@example.com',
+  firstName: 'Queen Stephanie',
+  lastName: 'Betonio',
+  username: 'Kuwen',
+  email: 'queenstephanie@nmsc.edu.ph',
   zipcode: '',
 })
 
