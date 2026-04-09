@@ -43,17 +43,17 @@ src/
 
 ## Component Boundaries
 
-| Component/Module | Responsibility | Communicates With |
-|------------------|----------------|-------------------|
-| `App` | App shell and route-less composition | `UsersTablePage` |
-| `UsersTablePage` | Handles loading/error/empty/success states for table page | `useUsersTableData`, `UsersTable` |
+| Component/Module    | Responsibility                                                    | Communicates With                         |
+| ------------------- | ----------------------------------------------------------------- | ----------------------------------------- |
+| `App`               | App shell and route-less composition                              | `UsersTablePage`                          |
+| `UsersTablePage`    | Handles loading/error/empty/success states for table page         | `useUsersTableData`, `UsersTable`         |
 | `useUsersTableData` | Fetches users, maps data, prepends personal row, exposes UI state | `usersApi`, `userMappers`, `personalUser` |
-| `usersApi` | Performs HTTP GET to JSONPlaceholder endpoint | External API |
-| `nameParser` | Splits full name into first/last with safe fallback rules | `userMappers` |
-| `userMappers` | Converts API payload into display row shape | `nameParser` |
-| `UsersTable` | Renders table header and list of rows | `UsersTableRow` |
-| `UsersTableRow` | Renders one row only from props | none |
-| `personalUser` | Static first-row source for student data | `useUsersTableData` |
+| `usersApi`          | Performs HTTP GET to JSONPlaceholder endpoint                     | External API                              |
+| `nameParser`        | Splits full name into first/last with safe fallback rules         | `userMappers`                             |
+| `userMappers`       | Converts API payload into display row shape                       | `nameParser`                              |
+| `UsersTable`        | Renders table header and list of rows                             | `UsersTableRow`                           |
+| `UsersTableRow`     | Renders one row only from props                                   | none                                      |
+| `personalUser`      | Static first-row source for student data                          | `useUsersTableData`                       |
 
 Boundary rules:
 
@@ -147,28 +147,31 @@ Why this order works:
 ## Anti-Patterns to Avoid
 
 ### Anti-Pattern 1: Fetch inside table component
+
 **What:** `UsersTable` performs network calls.
 **Why bad:** Blurs view/data boundaries and complicates testing.
 **Instead:** Fetch in `useUsersTableData`, pass rows as props.
 
 ### Anti-Pattern 2: Split logic duplicated in render loop
+
 **What:** Name parsing inline during `rows.map(...)`.
 **Why bad:** Recomputes per render and scatters rules.
 **Instead:** Parse once in `userMappers`.
 
 ### Anti-Pattern 3: Personal row hardcoded in JSX
+
 **What:** Table manually renders first row separately.
 **Why bad:** Creates two rendering paths and drift risk.
 **Instead:** Include personal row in normalized `rows` array.
 
 ## Scalability Considerations
 
-| Concern | At current assignment scope | If expanded later |
-|---------|-----------------------------|-------------------|
-| Data volume | Single fetch is enough | Add pagination and memoized row derivation |
-| Reuse | One page feature | Promote `users-table` into reusable feature module |
-| API growth | One endpoint | Add service layer methods per endpoint |
-| State complexity | Local hook state | Move to query library if multiple data sources |
+| Concern          | At current assignment scope | If expanded later                                  |
+| ---------------- | --------------------------- | -------------------------------------------------- |
+| Data volume      | Single fetch is enough      | Add pagination and memoized row derivation         |
+| Reuse            | One page feature            | Promote `users-table` into reusable feature module |
+| API growth       | One endpoint                | Add service layer methods per endpoint             |
+| State complexity | Local hook state            | Move to query library if multiple data sources     |
 
 ## Suggested Milestone Phase Mapping
 

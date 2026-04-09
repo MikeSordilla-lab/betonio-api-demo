@@ -1,9 +1,9 @@
 export function mergeRows(personalRow, apiRows) {
-  const safeApiRows = Array.isArray(apiRows) ? apiRows : []
+  const safeApiRows = Array.isArray(apiRows) ? apiRows : [];
 
   if (!personalRow) {
-    return safeApiRows
+    return safeApiRows;
   }
 
-  return [personalRow, ...safeApiRows]
+  return [personalRow, ...safeApiRows];
 }

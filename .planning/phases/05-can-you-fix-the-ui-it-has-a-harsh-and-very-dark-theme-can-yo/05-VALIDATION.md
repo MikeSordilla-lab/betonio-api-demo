@@ -15,14 +15,14 @@ This phase is a presentation-only UI softening pass. Validation must prove:
 
 ## Requirement Validation Matrix
 
-| Requirement | Validation Method | Evidence Source |
-| ----------- | ----------------- | --------------- |
-| UI-01 | Manual visual check in dev server | App shell, controls, table surfaces |
-| UI-02 | CSS inspection + lint/build | Token usage in `src/index.css`, `src/App.css`, `src/features/users-table/components/UsersTable.css` |
-| UI-03 | Manual contrast verification in both schemes | Body text and status indicators |
-| UI-04 | Manual hover/focus/row-state verification | Search/button/row/status interactive states |
-| UI-05 | Manual cross-scheme consistency check | Default + `prefers-color-scheme: dark` rendering |
-| UI-06 | Automated regression suite | `npm run test:rows && npm run test:phase2-api && npm run test:phase3-filter && npm run lint && npm run build` |
+| Requirement | Validation Method                            | Evidence Source                                                                                               |
+| ----------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| UI-01       | Manual visual check in dev server            | App shell, controls, table surfaces                                                                           |
+| UI-02       | CSS inspection + lint/build                  | Token usage in `src/index.css`, `src/App.css`, `src/features/users-table/components/UsersTable.css`           |
+| UI-03       | Manual contrast verification in both schemes | Body text and status indicators                                                                               |
+| UI-04       | Manual hover/focus/row-state verification    | Search/button/row/status interactive states                                                                   |
+| UI-05       | Manual cross-scheme consistency check        | Default + `prefers-color-scheme: dark` rendering                                                              |
+| UI-06       | Automated regression suite                   | `npm run test:rows && npm run test:phase2-api && npm run test:phase3-filter && npm run lint && npm run build` |
 
 ## Automated Validation Commands
 

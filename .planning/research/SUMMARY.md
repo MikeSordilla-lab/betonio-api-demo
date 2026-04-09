@@ -20,6 +20,7 @@ The biggest delivery risks are fetch lifecycle bugs (effect loops and stale-resp
 For this assignment scope, the best stack is the current baseline: React 19, React DOM 19, Vite (current repo on 8.x), and the official Vite React plugin. Native browser fetch plus AbortController is preferred over additional dependencies because it teaches core web API patterns without introducing avoidable complexity.
 
 **Core technologies:**
+
 - React 19.x: component rendering and state/effect model — current modern baseline and already in repo.
 - Vite 6.x+ (repo on 8.x): fast dev/build pipeline — ideal for a small classroom project.
 - Native Fetch API + AbortController: HTTP and request lifecycle control — zero dependency and enough for single-endpoint needs.
@@ -30,6 +31,7 @@ For this assignment scope, the best stack is the current baseline: React 19, Rea
 The assignment has clear table-stakes functionality with low-to-medium complexity and high grading impact.
 
 **Must have (table stakes):**
+
 - Fetch users from JSONPlaceholder `/users` endpoint.
 - Render required columns in one table: ID, First Name, Last Name, Username, Email, Zipcode.
 - Keep personal row first after data merge.
@@ -38,11 +40,13 @@ The assignment has clear table-stakes functionality with low-to-medium complexit
 - Sanitize missing nested values (especially zipcode).
 
 **Should have (differentiators):**
+
 - Source indicator per row (`Personal`/`API`) to make merge provenance obvious.
 - Manual refresh for easy demo and retry.
 - Lightweight search over username/email if time remains.
 
 **Defer (v2+):**
+
 - CRUD behavior, authentication, persistence, heavy grid frameworks, advanced table mechanics.
 
 ### Architecture Approach
@@ -50,6 +54,7 @@ The assignment has clear table-stakes functionality with low-to-medium complexit
 Use a thin feature-sliced structure: shell page, orchestration hook, API module, pure mapper/parser utilities, and presentational table components. Keep data flow one-directional and decide ordering once in the data hook (`[personalRow, ...apiRows]`). This keeps rendering simple and makes acceptance checks deterministic.
 
 **Major components:**
+
 1. `UsersTablePage` + `useUsersTableData`: lifecycle orchestration and state transitions.
 2. `usersApi` + mappers/parsers: endpoint access and canonical row normalization.
 3. `UsersTable`/`UsersTableRow`: pure presentation from already-normalized props.
@@ -67,24 +72,28 @@ Use a thin feature-sliced structure: shell page, orchestration hook, API module,
 Based on combined research, suggested phase structure:
 
 ### Phase 1: Data Contract and Transformation Core
+
 **Rationale:** Column requirements and merge behavior are hard dependencies for all downstream UI work.
 **Delivers:** Canonical row schema, personal row constant, name parser, API-to-row mapper, zipcode fallbacks.
 **Addresses:** Required columns, name parsing, data sanitation, personal-row consistency.
 **Avoids:** Name parsing failures and row-shape divergence.
 
 ### Phase 2: API Integration and State Lifecycle
+
 **Rationale:** Fetch wiring should land after transformation utilities so live data flows through a stable model.
 **Delivers:** `usersApi` + `useUsersTableData` with loading/error states, prepend logic, stale-request protection.
 **Uses:** Native fetch, AbortController, hook lint guardrails.
 **Implements:** Architecture boundary between transport, transform, and UI state.
 
 ### Phase 3: Table UI and Assignment Compliance
+
 **Rationale:** Presentation is fastest and safest once data contract and lifecycle are stable.
 **Delivers:** Semantic table, required column order, consistent row rendering, optional source badges.
 **Addresses:** Table-stakes output required for grading.
 **Avoids:** JSX-level logic duplication and top-row special-casing.
 
 ### Phase 4: Hardening and Submission Readiness
+
 **Rationale:** Final pass should validate non-functional quality and prevent common review regressions.
 **Delivers:** Retry/refresh behavior (optional), edge-case checks, lint-clean run, docs/readme alignment.
 **Addresses:** Reliability and reproducibility expectations.
@@ -100,21 +109,23 @@ Based on combined research, suggested phase structure:
 ### Research Flags
 
 Phases likely needing deeper research during planning:
+
 - **Phase 2 (API lifecycle hardening):** Useful to verify exact fetch cancellation patterns and strict-mode-safe effect design.
 - **Phase 4 (hardening/documentation):** Useful if deployment or evaluation rubric introduces environment-specific constraints.
 
 Phases with standard patterns (skip research-phase):
+
 - **Phase 1 (data contract + mappers):** Well-bounded pure-function patterns.
 - **Phase 3 (semantic table rendering):** Established React and HTML table conventions.
 
 ## Confidence Assessment
 
-| Area | Confidence | Notes |
-|------|------------|-------|
-| Stack | HIGH | Recommendations align with existing repo baseline and assignment size constraints. |
-| Features | HIGH | Derived from explicit assignment requirements and required endpoint/columns. |
-| Architecture | HIGH | Pattern fit is straightforward for single-page, single-endpoint educational scope. |
-| Pitfalls | HIGH | Risks are well-documented in official React/MDN guidance and match known student failure modes. |
+| Area         | Confidence | Notes                                                                                           |
+| ------------ | ---------- | ----------------------------------------------------------------------------------------------- |
+| Stack        | HIGH       | Recommendations align with existing repo baseline and assignment size constraints.              |
+| Features     | HIGH       | Derived from explicit assignment requirements and required endpoint/columns.                    |
+| Architecture | HIGH       | Pattern fit is straightforward for single-page, single-endpoint educational scope.              |
+| Pitfalls     | HIGH       | Risks are well-documented in official React/MDN guidance and match known student failure modes. |
 
 **Overall confidence:** HIGH
 
@@ -126,17 +137,21 @@ Phases with standard patterns (skip research-phase):
 ## Sources
 
 ### Primary (HIGH confidence)
+
 - React docs (`useEffect`, Effects guidance) — lifecycle, dependencies, strict-mode behavior.
 - MDN Fetch API and AbortController guidance — response validation and cancellation patterns.
 - JSONPlaceholder users endpoint — source payload shape and nested address fields.
 - Local project artifacts (`.planning/PROJECT.md`, `.planning/codebase/CONCERNS.md`) — assignment scope and repository context.
 
 ### Secondary (MEDIUM confidence)
+
 - Community consensus embedded in research outputs on assignment-scoped architecture patterns.
 
 ### Tertiary (LOW confidence)
+
 - None identified.
 
 ---
-*Research completed: 2026-04-08*
-*Ready for roadmap: yes*
+
+_Research completed: 2026-04-08_
+_Ready for roadmap: yes_

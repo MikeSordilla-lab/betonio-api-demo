@@ -62,26 +62,26 @@ Explicitly excluded. Documented to prevent scope creep.
 
 Which phases cover which requirements. Updated during roadmap creation.
 
-| Requirement | Phase   | Status  |
-| ----------- | ------- | ------- |
-| DATA-01     | Phase 2 | Pending |
-| DATA-02     | Phase 3 | Pending |
-| DATA-03     | Phase 1 | Pending |
-| DATA-04     | Phase 1 | Pending |
-| DATA-05     | Phase 2 | Pending |
-| DATA-06     | Phase 2 | Pending |
-| UX-01       | Phase 1 | Pending |
-| UX-02       | Phase 2 | Pending |
-| UX-03       | Phase 3 | Pending |
-| UX-04       | Phase 1 | Pending |
-| DLV-01      | Phase 4 | Pending |
-| DLV-02      | Phase 4 | Pending |
+| Requirement | Phase   | Status    |
+| ----------- | ------- | --------- |
+| DATA-01     | Phase 2 | Pending   |
+| DATA-02     | Phase 3 | Pending   |
+| DATA-03     | Phase 1 | Pending   |
+| DATA-04     | Phase 1 | Pending   |
+| DATA-05     | Phase 2 | Pending   |
+| DATA-06     | Phase 2 | Pending   |
+| UX-01       | Phase 1 | Pending   |
+| UX-02       | Phase 2 | Pending   |
+| UX-03       | Phase 3 | Pending   |
+| UX-04       | Phase 1 | Pending   |
+| DLV-01      | Phase 4 | Pending   |
+| DLV-02      | Phase 4 | Pending   |
 | UI-01       | Phase 5 | Completed |
 | UI-02       | Phase 5 | Completed |
-| UI-03       | Phase 5 | Complete |
-| UI-04       | Phase 5 | Complete |
+| UI-03       | Phase 5 | Complete  |
+| UI-04       | Phase 5 | Complete  |
 | UI-05       | Phase 5 | Completed |
-| UI-06       | Phase 5 | Complete |
+| UI-06       | Phase 5 | Complete  |
 
 **Coverage:**
 

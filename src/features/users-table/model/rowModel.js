@@ -1,38 +1,38 @@
-import { REQUIRED_FIELD_KEYS, ROW_SOURCE } from './rowContract.js'
+import { REQUIRED_FIELD_KEYS, ROW_SOURCE } from "./rowContract.js";
 
 function sanitizeValue(value) {
   if (value === null || value === undefined) {
-    return ''
+    return "";
   }
 
-  return String(value).trim()
+  return String(value).trim();
 }
 
 export function splitName(name) {
-  const cleanedName = sanitizeValue(name)
+  const cleanedName = sanitizeValue(name);
 
   if (!cleanedName) {
-    return { firstName: '', lastName: '' }
+    return { firstName: "", lastName: "" };
   }
 
-  const parts = cleanedName.split(/\s+/)
-  const [firstName, ...lastNameParts] = parts
+  const parts = cleanedName.split(/\s+/);
+  const [firstName, ...lastNameParts] = parts;
 
   return {
     firstName,
-    lastName: lastNameParts.join(' '),
-  }
+    lastName: lastNameParts.join(" "),
+  };
 }
 
 export function createMissingFieldMap(row) {
   return REQUIRED_FIELD_KEYS.reduce((acc, field) => {
-    acc[field] = !sanitizeValue(row[field])
-    return acc
-  }, {})
+    acc[field] = !sanitizeValue(row[field]);
+    return acc;
+  }, {});
 }
 
 export function normalizeApiUser(apiUser) {
-  const { firstName, lastName } = splitName(apiUser?.name)
+  const { firstName, lastName } = splitName(apiUser?.name);
 
   const row = {
     id: sanitizeValue(apiUser?.id),
@@ -42,12 +42,12 @@ export function normalizeApiUser(apiUser) {
     email: sanitizeValue(apiUser?.email),
     zipcode: sanitizeValue(apiUser?.address?.zipcode),
     source: ROW_SOURCE.API,
-  }
+  };
 
   return {
     ...row,
     missingFields: createMissingFieldMap(row),
-  }
+  };
 }
 
 export function createPersonalRow(personalInput) {
@@ -59,10 +59,10 @@ export function createPersonalRow(personalInput) {
     email: sanitizeValue(personalInput?.email),
     zipcode: sanitizeValue(personalInput?.zipcode),
     source: ROW_SOURCE.PERSONAL,
-  }
+  };
 
   return {
     ...row,
     missingFields: createMissingFieldMap(row),
-  }
+  };
 }

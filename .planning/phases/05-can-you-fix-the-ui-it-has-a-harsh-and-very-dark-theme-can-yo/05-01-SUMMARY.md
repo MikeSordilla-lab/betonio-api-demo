@@ -43,10 +43,10 @@ Implemented a light-first, calmer theme system by introducing semantic global to
 
 ## Tasks Completed
 
-| Task | Description | Commit | Files |
-| ---- | ----------- | ------ | ----- |
-| 1 | Define softened semantic theme tokens in global stylesheet | 9185dd8 | src/index.css |
-| 2 | Refactor App shell and controls to consume semantic tokens only | 5111bd8 | src/App.css |
+| Task | Description                                                     | Commit  | Files         |
+| ---- | --------------------------------------------------------------- | ------- | ------------- |
+| 1    | Define softened semantic theme tokens in global stylesheet      | 9185dd8 | src/index.css |
+| 2    | Refactor App shell and controls to consume semantic tokens only | 5111bd8 | src/App.css   |
 
 ## Verification
 

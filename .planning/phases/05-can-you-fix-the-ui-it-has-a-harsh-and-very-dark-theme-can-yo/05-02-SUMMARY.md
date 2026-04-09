@@ -41,10 +41,10 @@ Applied semantic token styling to the dense users table surface so headers, rows
 
 ## Tasks Completed
 
-| Task | Description | Commit | Files |
-| ---- | ----------- | ------ | ----- |
-| 1 | Refactor table visuals to softened semantic tokens | 3f58d46 | src/features/users-table/components/UsersTable.css |
-| 2 | Run behavior regression suite after CSS-only changes | 6ec2695 | Verification-only task commit |
+| Task | Description                                          | Commit  | Files                                              |
+| ---- | ---------------------------------------------------- | ------- | -------------------------------------------------- |
+| 1    | Refactor table visuals to softened semantic tokens   | 3f58d46 | src/features/users-table/components/UsersTable.css |
+| 2    | Run behavior regression suite after CSS-only changes | 6ec2695 | Verification-only task commit                      |
 
 ## Verification
 

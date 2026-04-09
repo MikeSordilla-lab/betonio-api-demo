@@ -28,7 +28,11 @@
 }
 
 .users-table tr:nth-child(even) td {
-  background: color-mix(in srgb, var(--surface-panel) 74%, var(--surface-muted));
+  background: color-mix(
+    in srgb,
+    var(--surface-panel) 74%,
+    var(--surface-muted)
+  );
 }
 
 .users-table tr:hover td {

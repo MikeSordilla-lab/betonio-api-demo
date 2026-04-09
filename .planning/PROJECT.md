@@ -44,17 +44,18 @@ Project starts from an existing brownfield React + Vite starter codebase already
 
 ## Key Decisions
 
-| Decision | Rationale | Outcome |
-|----------|-----------|---------|
-| Build inside existing React + Vite repo | Starter app already exists and reduces setup overhead | — Pending |
-| Use single table view for personal + API data | Assignment explicitly asks to combine and display together | — Pending |
-| Parse `name` into first/last fields client-side | API returns full name; assignment needs split fields | — Pending |
+| Decision                                        | Rationale                                                  | Outcome   |
+| ----------------------------------------------- | ---------------------------------------------------------- | --------- |
+| Build inside existing React + Vite repo         | Starter app already exists and reduces setup overhead      | — Pending |
+| Use single table view for personal + API data   | Assignment explicitly asks to combine and display together | — Pending |
+| Parse `name` into first/last fields client-side | API returns full name; assignment needs split fields       | — Pending |
 
 ## Evolution
 
 This document evolves at phase transitions and milestone boundaries.
 
 **After each phase transition** (via `/gsd-transition`):
+
 1. Requirements invalidated? -> Move to Out of Scope with reason
 2. Requirements validated? -> Move to Validated with phase reference
 3. New requirements emerged? -> Add to Active
@@ -62,10 +63,12 @@ This document evolves at phase transitions and milestone boundaries.
 5. "What This Is" still accurate? -> Update if drifted
 
 **After each milestone** (via `/gsd-complete-milestone`):
+
 1. Full review of all sections
 2. Core Value check - still the right priority?
 3. Audit Out of Scope - reasons still valid?
 4. Update Context with current state
 
 ---
-*Last updated: 2026-04-08 after initialization*
+
+_Last updated: 2026-04-08 after initialization_
